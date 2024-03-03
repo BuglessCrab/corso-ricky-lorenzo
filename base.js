@@ -20,7 +20,7 @@ class Game {
     }
 
     nextFrame() {
-        window.setTimeout(this.mainCycle,10);
+        window.setTimeout(this.mainCycle,100);
     }
 
     clear() {
