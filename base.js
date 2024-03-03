@@ -20,7 +20,7 @@ class Game {
     }
 
     nextFrame() {
-        window.setTimeout(this.mainCycle,100);
+        window.setTimeout(this.mainCycle,10);
     }
 
     clear() {
@@ -50,5 +50,9 @@ class Game {
 
     setPixel(x,y,color) {
         this.board[x][y] = color;
+    }
+
+    getPixel(x,y) {
+        return this.board[x][y];
     }
 }
